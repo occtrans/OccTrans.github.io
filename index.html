@@ -6,7 +6,7 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <meta name="title" content="OccTrans-ICME 2026">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
   <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
@@ -241,23 +241,25 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Exploring World Transitions via 3D Occupancy World Model</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://wgqtmac.github.io/" target="_blank">Guoqing Wang</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://scholar.google.com/citations?user=au87GKsAAAAJ&hl=zh-CN" target="_blank">Pin Tang</a>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=P20Rk5oAAAAJ&hl=zh-CN" target="_blank">Xiangxuan Ren</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://vision.sjtu.edu.cn/" target="_blank">Chao Ma</a><sup>*</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <span class="author-block">Shanghai Jiao Tong University<br>ICME 2026</span>
                     <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates corresponding author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -296,7 +298,7 @@
                 </span>
 
                 <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -304,7 +306,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
@@ -321,12 +323,12 @@
       <!-- TODO: Replace with your teaser video -->
       <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
         <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
+        <source src="static/videos/icme-occtrans.mp4" type="video/mp4">
       </video>
       <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
+      <!-- <h2 class="subtitle has-text-centered">
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      </h2> -->
     </div>
   </div>
 </section>
@@ -341,7 +343,10 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Occupancy world models have emerged as a pivotal paradigm for autonomous systems to perceive and predict the evolution of complex 3D environments.
+Recent advances leverage GPT-like autoregressive and diffusion-based architectures to forecast future occupancy from historical observations.
+Despite their success, these approaches struggle to capture heterogeneous motion correlations of surrounding scenes due to the entanglement of ego-motion and scene dynamics, leading to severe scene degradation in long-term predictions.
+We present \textit{OccTrans}, a novel 3D occupancy world transitions modeling framework that explicitly decouples ego-motion states from token-level dynamics. Our approach introduces a temporal warping module that applies ego-pose transformations to align tokens from previous frames into the coordinate of the current frame, effectively isolating vehicle motion. A dynamic world model then predicts residual token-level dynamics induced by moving objects and structural variations. This disentangled formulation mitigates cumulative errors, preserves long-term scene consistency, and improves prediction fidelity. Evaluations on the Occ3D-nuScenes benchmark demonstrate that OccTrans achieves substantial improvements over state-of-the-art methods while maintaining high computational efficiency. Moreover, OccTrans exhibits strong capability in generating coherent long-horizon 3D occupancy sequences.
           </p>
         </div>
       </div>
@@ -351,122 +356,36 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Learning within Model Trees</h2>
+         <p>
+              <img src="static/images/overview_icme.pdf" alt="Directional Weight Score" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy">
+            </p>
+            <p>
+                  The overview of our proposed OccTrans, which includes a geometric aggregated tokenizer and a world transitions modeling module. The tokenizer, with an encoder-decoder architecture, discretizes the scene into tokens on the BEV plane. The world transition modeling module predicts future tokens from past ones by modeling temporal warping and dynamics, and comprises three components: hierarchical spatial attention, temporal warping, and a dynamic world model.
+            </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
 
 
 
 
 
 
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
 
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
+
+
+
+
+
+
 
 
 
@@ -480,12 +399,11 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@article{occtrans2026,
+  title={Exploring World Transitions via 3D Occupancy World Model},
+  author={Guoqing Wang and Pin Tang and Xiangxuan Ren and Chao Ma},
+  journal={IEEE International Conference on Multimedia and Expo},
+  year={2026},
 }</code></pre>
     </div>
 </section>
